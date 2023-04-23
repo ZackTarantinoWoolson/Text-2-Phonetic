@@ -1,7 +1,7 @@
 {
     "name": "Phonetic Translator",
     "version": "1.0.0",
-    "description": "Translate highlighted text to NATO Phonetics",
+    "description": "Translate text to NATO Phonetics",
     "manifest_version": 3,
     "author": "Zachary Tarantino-Woolson",
     "action": {
