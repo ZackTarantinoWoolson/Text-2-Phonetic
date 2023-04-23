@@ -3,19 +3,19 @@ const nato_arr = [
 ]
 
 function getValueFromKeyPress() {
-    var arrayOfCharacters = document.getElementById("en_text").value.toUpperCase().split('');
+    var keyValue = document.getElementById("en_text").value.toUpperCase();
     var lblValue = document.getElementById("lblValue");
-
-    // console.log(arrayOfCharacters)
+    var result=""
+    var arrayOfCharacters = keyValue.split('');
 
     for (var i = 0; i < arrayOfCharacters.length; i++) {
         var nato_txt = isIteminArray(arrayOfCharacters[i])
 
         if (nato_txt === undefined) {
-            var result = arrayOfCharacters[i] + "  "
+            result = result + arrayOfCharacters[i] + "  "
         }
         else if (nato_txt !== undefined) {
-            var result = nato_txt + "  "
+            result = result + nato_txt + "  "
         }
     }
 
