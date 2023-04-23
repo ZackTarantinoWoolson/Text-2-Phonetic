@@ -1,23 +1,21 @@
 const nato_arr = [
-    ["A", "Alfa"], ["B", "Bravo"], ["C", "Charlie"], ["D", "Delta"], ["E", "Echo"], ["F", "Foxtro"], ["G", "Golf"], ["H", "Hotel"], ["I", "India"], ["J", "Juliett"], ["K", "Kilo"], ["L", "Lima"], ["M", "Mike"], ["N", "November"], ["O", "Oscar"], ["P", "Papa"], ["Q", "Quebec"], ["R", "Romeo"], ["S", "Sierra"], ["T", "Tango"], ["U", "Uniform"], ["V", "Victor"], ["W", "Whiskey"], ["X", "Xray"], ["Y", "Yankee"], ["Z", "Zulu"], [".", "Stop"], [",", "Comma"], ["1", "One"], ["2", "Two"], ["3", "Three"], ["4", "Four"], ["5", "Five"], ["6", "Six"], ["7", "Seven"], ["8", "Eight"], ["9", "Nine"], ["0", "Zero"], [" ", "(space)"]
+    ["A", "Alfa"], ["B", "Bravo"], ["C", "Charlie"], ["D", "Delta"], ["E", "Echo"], ["F", "Foxtro"], ["G", "Golf"], ["H", "Hotel"], ["I", "India"], ["J", "Juliett"], ["K", "Kilo"], ["L", "Lima"], ["M", "Mike"], ["N", "November"], ["O", "Oscar"], ["P", "Papa"], ["Q", "Quebec"], ["R", "Romeo"], ["S", "Sierra"], ["T", "Tango"], ["U", "Uniform"], ["V", "Victor"], ["W", "Whiskey"], ["X", "Xray"], ["Y", "Yankee"], ["Z", "Zulu"], [".", "Stop"], [",", "Comma"], ["1", "One"], ["2", "Two"], ["3", "Three"], ["4", "Four"], ["5", "Five"], ["6", "Six"], ["7", "Seven"], ["8", "Eight"], ["9", "Nine"], ["0", "Zero"], [" ", "(space)"], ['\n',"(return)"]
 ]
 
-function edValueKeyPress() {
-    var edValue = document.getElementById("en_text");
+function getValueFromKeyPress() {
+    var arrayOfCharacters = document.getElementById("en_text").value.toUpperCase().split('');
     var lblValue = document.getElementById("lblValue");
-    var s = edValue.value.toUpperCase();
 
-    console.log(s.length)
-    var arrayOfCharacters = s.split('');
-    var result = ""
+    // console.log(arrayOfCharacters)
+
     for (var i = 0; i < arrayOfCharacters.length; i++) {
         var nato_txt = isIteminArray(arrayOfCharacters[i])
 
         if (nato_txt === undefined) {
-            result = result + arrayOfCharacters[i] + "  "
+            var result = arrayOfCharacters[i] + "  "
         }
         else if (nato_txt !== undefined) {
-            result = result + nato_txt + "  "
+            var result = nato_txt + "  "
         }
     }
 
@@ -32,5 +30,5 @@ function isIteminArray(item) {
     }
 }
 
-document.getElementById("en_text").onkeydown = function () { edValueKeyPress() };
-document.getElementById("en_text").onkeyup = function () { edValueKeyPress() };
+document.getElementById("en_text").onkeydown = function () { getValueFromKeyPress() };
+document.getElementById("en_text").onkeyup = function () { getValueFromKeyPress() };
