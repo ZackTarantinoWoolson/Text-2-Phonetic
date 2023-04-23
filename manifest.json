@@ -15,5 +15,8 @@
             ],
             "matches": ["http://*/*"]
         }
-    ]
+    ],
+    "icons":{
+        "128":"assets/128.png"
+    }
 }
