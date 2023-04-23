@@ -1,0 +1,22 @@
+{
+    "name": "Phonetic Translator",
+    "version": "1.0.0",
+    "description": "Translate highlighted text to NATO Phonetics",
+    "manifest_version": 3,
+    "author": "Zachary Tarantino-Woolson",
+    "action": {
+        "default_popup": "translator.html",
+        "default_title": "Phonetic Translator"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "nato_translate.js"
+            ],
+            "matches": ["http://*/*"]
+        }
+    ],
+    "permissions": [
+        "clipboardWrite"
+    ]
+}
