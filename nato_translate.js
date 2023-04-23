@@ -34,4 +34,3 @@ function isIteminArray(item) {
 
 document.getElementById("en_text").onkeydown = function () { edValueKeyPress() };
 document.getElementById("en_text").onkeyup = function () { edValueKeyPress() };
-

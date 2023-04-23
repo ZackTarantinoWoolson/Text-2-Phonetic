@@ -15,8 +15,5 @@
             ],
             "matches": ["http://*/*"]
         }
-    ],
-    "permissions": [
-        "clipboardWrite"
     ]
 }
