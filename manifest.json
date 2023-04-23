@@ -13,7 +13,7 @@
             "js": [
                 "nato_translate.js"
             ],
-            "matches": ["<all_urls>"]
+            "matches": ["https://*/*"]
         }
     ],
     "icons":{
