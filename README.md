@@ -8,7 +8,7 @@ Find out more about the NATO Phonetic Alphabet here: https://en.wikipedia.org/wi
 
 ## Installion
 
-You can clone this repo and load the unpacked extension to your browser or You can download the Extension from the Chrome store here:
+You can download the Extension from the Chrome store here: [Phonetic Translator Extention](https://chrome.google.com/webstore/detail/phonetic-translator/kbodgkmbohfhjemmdmbimhbagggladba?hl=en&authuser=0)
 
 
 ## Acknowledgements
